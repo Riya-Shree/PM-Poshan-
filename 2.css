@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: black;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("bg.jpg");
+    background-size:cover ;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color:brown;
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: darkblue;
+}
+.btn
+{
+    font-size: 1em;
+    color:wheat;
+    background: red;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+header
+{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background: whitesmoke;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px black;
+}
+header .logo img
+{
+    align-items: left;
+    height: 56px;
+    width: 40;
+}
+header .navigation{
+    display: flex;
+    position: relative;
+}
+header .navigation li{
+    list-style: none;
+    padding: 6px;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2em;
+    color: skyblue;
+}
+header.sticky .navigation li a
+{
+    color: black;
+}
+header .navigation li a:hover
+{
+    color: lightpink;
+}
+
+.row
+{   
+    padding: 100px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: wheat;
+    justify-content: space-between;
+    
+}
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+.titletext
+{
+    color: cornflowerblue;
+    font-size: 2em;
+    font-weight: 300;
+}
+.titletext span
+{
+    color: darkcyan;
+    font-size: 2em;
+    font-weight: 700;
+}
+.row .col50 .imgBx
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.row .col50 .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
+.contact
+{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    background: lightsalmon;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    z-index: -1;
+    opacity: 0.6;  
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 0.9rem;
+    font-family: 'Pacifico', cursive;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    color: darkblue;
+    text-align:top;
+    justify-content: center;
+    font-family: 'Great Vibes', cursive;
+
+}
+.h-primary p{
+    justify-content: center;
+    align-content: center;
+    font-family: 'Pacifico', cursive;
+}
+.center{
+    text-align: center;
+}
+
+.importance
+{
+    background: url("bg\ 8.jpg")no-repeat center center/cover;
+    background-size: cover;
+}
+.white .titleText,
+.white  p{
+    color: white;
+}
+.importance  .content
+{
+   display: flex;
+   justify-content: center; 
+   flex-wrap: wrap;
+   flex-direction: row;
+   margin-top: 40px;
+}
+.importance .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+}
+.importance .content .box .imgBx
+{
+    position: relative;
+    width: 110px;
+    height: 100px;
+    margin-bottom: 10px;
+    
+    overflow: hidden;
+}
+.importance .content .box .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+}
+.importance .content .box .text
+{
+    text-align: center;
+}
+.importance .content .box .text p
+{
+    color: black;
+    font-style: italic;
+}
+.importance .titlewhite .titleText
+{
+    color: darkblue;
+    font-size: 3.8em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.importance .titlewhite p
+{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+.gallery .gallery-section
+{
+    width: 100%;
+    padding: 60px 0;
+    background: wheat;
+}
+.inner-width
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.gallery .gallery-section h1{
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    color: darkblue;
+}
+.border
+{
+    width: 100px;
+    height: 4px;
+    background: brown;
+    margin: 60px auto;
+}
+
+.gallery .gallery-section .pictures
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+.gallery .gallery-section .pictures .image
+{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.gallery .gallery-section .pictures .image img
+{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.gallery .gallery-section .pictures .image:hover img
+{
+    transform: scale(1.4) rotate(15deg);
+}
+footer
+{
+    color: darkblue;
+    background-color: wheat;
+}
+
+@media screen and (max-width:968px) {
+    .gallery .gallery-section .image{
+        flex: 33.33%;
+    }
+}
+@media screen and (max-width:960px) {
+    .gallery .gallery-section .image{
+        flex: 33.33%;
+    }
+}
+@media screen and (max-width:768px) {
+    .gallery .gallery-section .image{
+        flex: 33.33%;
+    }
+}
+@media (max-width:991px) {
+    
+    header,
+    header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% + 68);
+        position: fixed;
+        top: 48px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: white;
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url("menu.png");
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url("close.png");
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .banner .content h2
+    {
+        font-size: 3em;
+        color: white;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx
+    {
+        height: 300px;
+        margin-top: 20px;
+    }
+    
+}
